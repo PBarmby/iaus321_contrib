@@ -1,0 +1,166 @@
+% iaus2esa.tex -- sample pages for Proceedings IAU Symposium document class
+% (based on v1.0 cca2esam.tex)
+% v1.04 released 17 May 2004 by TechBooks
+%% small changes and additions made by KAvdH/IAU 4 June 2004
+% Copyright (2004) International Astronomical Union
+
+\NeedsTeXFormat{LaTeX2e}
+
+\documentclass{iau} 
+\usepackage{graphicx}
+
+\title[S321.~~Mid-infrared outskirts of M31] %% give here short title %%
+{Stellar populations in the outskirts of M31: the mid-infrared view}
+
+\author[P. Barmby \& M. Rafiei Ravandi]   %% give here short author list %%
+{P. Barmby$^1$, M. Rafiei Ravandi$^1$}
+% \and Susanne H{\"o}fner$^2$}
+
+\affiliation{$^1$Department of Physics and Astronomy and Centre for Planetary and Space Exploration,
+University of Western Ontario, London, Canada \\ email: {\tt pbarmby@uwo.ca}} 
+%\\[\affilskip]
+%$^2$Dept. of Astronomy \& Space Physics, Uppsala University, \\ Box
+%515, SE-75120 Uppsala, Sweden \\email: {\tt hoefner@astro.uu.se}}
+
+\pubyear{2016}
+\volume{321}  %% insert here IAU Symposium No.
+\setcounter{page}{1}
+\jname{Formation and Evolution of Galaxy Outskirts}
+\editors{A. Gil de Paz, ed.}
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+The mid-infrared provides a unique view of galaxy stellar populations, sensitive to both the integrated light of old, 
+low-mass stars and to individual dusty mass-losing stars. We present results from an extended Spitzer/IRAC survey 
+of M31 with total lengths of 6.6 and 4.4 degrees along the major and minor axes, respectively. The integrated surface 
+brightness profile proves to be surprisingly difficult to trace in the outskirts of the galaxy, but we can also investigate 
+the disk/halo transition via a star count profile, with careful correction for foreground and background contamination. 
+Our point-source catalog allows us to report on mid-infrared properties of individual objects in the outskirts of M31, 
+via cross-correlation with PAndAS, WISE, and other catalogs.
+
+\keywords{infrared: galaxies, galaxies: individual (M31), galaxies: stellar content}
+\end{abstract}
+
+\firstsection % if your document starts with a section,
+              % remove some space above using this command.
+\section{Introduction}
+
+Getting the full picture of the stellar populations in the nearest large galaxy, M31, poses challenges because of the
+large angular extent of the galaxy on the sky. The PAndAS project \cite[(McConnachie \etal\ 2009)]{pandas} covers
+a large area around M31 in visible light, but observations at other wavelengths are needed to complete the picture.
+As seen by the S4G survey, the mid-infrared has the advantages of tracing the integrated light of low-mass stars while being relatively unaffected 
+by interstellar extinction \cite[(Querejeta \etal\ 2015)]{q15}. The DUSTiNGS survey demonstrates that mid-infrared observations can 
+also be used to identify  mass-losing stars with circumstellar dust \cite[(Boyer \etal\ 2015)]{boyer15}.
+
+\section{Observations}
+
+With about 40 hours of {\it Spitzer} observations in the post-cryogenic mission, we extended the IRAC 3.6 and 4.5~$\mu$m
+mapping of M31 presented by \cite[Barmby \etal\ (2006)]{barmby06} to larger distances along the major and minor
+axes of the galaxy (Fig.\,\ref{fig1}). \cite[Rafiei Ravandi \etal\ (2016)]{rr16} describes the observations, the challenging process of background
+subtraction, and construction of a point-source catalog containing over 400000 individual sources. The catalog reaches (Vega)
+magnitude of $\approx 19$ at both 3.6 and 4.5~$\mu$m, about 1 magnitude fainter than the tip of the red giant branch luminosity
+at the distance of M31. Using wide-field/shallow surveys
+to model the foreground and narrow-field/deep surveys to model the background, we developed a scheme to estimate the probability that 
+a given mid-infrared source belonged to M31.
+The effects of background subtraction on integrated photometry and the limited overlap between integrated measurements
+and star counts meant that our measurements of the surface brightness profile  were not a substantial improvement over those presented by
+\cite[Courteau \etal\ (2011)]{courteau11}, which was based on the \cite[Barmby \etal\ (2006)]{barmby06} data.
+
+
+\begin{figure}[t]
+% \vspace*{-2.0 cm}
+\begin{center}
+ \includegraphics[width=5in]{barmby_iaus321_fig1} 
+% \vspace*{-1.0 cm}
+ \caption{Sky positions of point sources in the outskirts of M31 matched to SIMBAD sources with a tolerance of 1~arcsec. 
+ Blank regions along the major and minor axes are locations where crowding was too severe for accurate point-source extraction.
+The concentration of galaxies in the northeast part of the disc is due to identification in a study of M31 star clusters by the PHAT project 
+\cite[(Johnson \etal\ 2012)]{johnson12} 
+while the carbon stars to the northwest are from a study of the satellite galaxy NGC~205 by \cite[Demers, Battinelli \& Letarte (2003)]{dbl03}.}
+   \label{fig1}
+\end{center}
+\end{figure}
+
+
+\section{Analysis: mid-infrared point sources in M31} 
+
+Our extensive point-source catalog allowed for detailed comparisons between the stellar populations as seen in the IRAC
+3.6 and 4.5~$\mu$m bands and those observed at other wavelengths. Comparing with 2MASS and WISE  \cite[(Rafiei Ravandi \etal\ 2016, Fig.\ 6)]{rr16}, 
+we find that sources detected only by IRAC and WISE detections are redder and fainter than those detected by 
+all three of IRAC, WISE, and 2MASS. This is consistent with the greater depth and redder response of WISE compared to 2MASS.
+Comparing with PAndAS \cite[(Rafiei Ravandi \etal\ 2016, Fig.\ 7)]{rr16}, we find that the (optically-redder) IRAC+PAndAs detections are more likely to be
+Galactic foreground  dwarfs compared to the PAndAS-only detections; however, the IRAC observations do detect some probable M31 giants.
+
+Both the SIMBAD and NED databases include individual components of nearby galaxies (e.g., stars, star clusters, planetary nebulae, H{\sc ii} regions),
+although these are not the main focus of either database. We matched the IRAC sources against SIMBAD objects with a
+distance tolerance of 1~arcsec, with the results shown in Figures~1 and 2.
+%\footnote{Results from matching against NED were similar, although the categorization of individual sources was different in some cases.}  
+Figure~1 shows that, as expected, the sources
+categorized as stars or star-related (PNe, H{\sc ii} regions) are strongly concentrated toward the disk of the galaxy, while background
+galaxies and active galactic nuclei are more uniformly distributed. Globular clusters fall in between these two distributions and
+are easily detectible in this dataset.
+
+\begin{figure}[t]
+% \vspace*{-2.0 cm}
+\begin{center}
+ \includegraphics[width=4.5in]{barmby_iaus321_fig2} 
+% \vspace*{-1.0 cm}
+ \caption{Spitzer/IRAC colour-magnitude diagram showing point sources in the outskirts of M31 matched to SIMBAD
+ sources with a tolerance of 1~arcsec. All magnitudes are in the Vega system; the red colours of objects brighter than
+ $[4.5]\approx 11$ are due to saturation in the 3.6~$\mu$m band.}
+   \label{fig2}
+\end{center}
+\end{figure}
+
+Figure~2 shows the colour-magnitude diagram of matched sources. As expected from the results of deep-field extragalactic surveys,
+the active galactic nuclei and quasars have very red $[3.6]-[4.5]$ colours; background galaxies are mostly found at $[3.6]-[4.5]>0.1$.
+Globular clusters have Vega-magnitude colours  $[3.6]-[4.5]\approx 0$ (see also \cite[Barmby \& Jalilian 2012)]{bj12}).
+Individual stars in M31 show a wide range of mid-infrared colours; interestingly, (optically) red supergiants are mostly found at $[3.6]-[4.5]<0$
+while the handful of blue supergiants have $[3.6]-[4.5]>0.2$, so `red' and `blue' are reversed in the mid-infrared.
+This is consistent with the results of \cite[Britavskiy \etal\ (2015)]{brit15} on similar stars in Local Group dwarf irregulars.
+
+
+\begin{thebibliography}{}
+
+\bibitem[Barmby \etal (2006)]{barmby06}
+{{Barmby,} P. \etal} 2006, \textit{ApJ} (Letters), 143, 87
+
+\bibitem[Barmby \& Jalilian (2012)]{bj12}
+{{Barmby,} P. \& {Jalilian}, F.F.} 2012, \textit{AJ}, 650, L45
+
+\bibitem[Britavskiy \etal\ (2015)]{brit15}
+{{Britavskiy}, N.~E., {Bonanos}, A.~Z., {Mehner}, A., {Boyer}, M.~L.  \& {McQuinn}, K.~B.~W.}
+2015, \textit{A\&A}, 584, A33
+
+\bibitem[Boyer \etal\ (2015)]{boyer15} 
+{{Boyer}, M.L. \etal} 2015, \textit{ApJS}, 800, 51
+
+\bibitem[Courteau \etal\ (2011)]{courteau11}
+{{Courteau}, S., {Widrow}, L.~M., {McDonald}, M., {Guhathakurta}, P., 
+	{Gilbert}, K.~M., {Zhu}, Y., {Beaton}, R.~L. \& {Majewski}, S.~R.}
+2011, \textit{ApJ}, 739, 20
+
+\bibitem[Demers, Battinelli \& Letarte (2003)]{dbl03}
+{{Demers}, S., {Battinelli}, P. \& {Letarte}, B.} 2003, \textit{AJ}, 125, 3037
+
+\bibitem[Johnson \etal\ (2012)]{johnson12}
+{Johnson, L.C. \etal} 2012, \textit{ApJ}, 752, 95
+
+\bibitem[McConnachie \etal (2009)]{pandas}
+{{McConnachie}, A. \etal} 2009, \textit{Nature}, 466, 61
+
+\bibitem[Querejeta \etal\ (2015)]{q15}
+{{Querejeta}, M. \etal} 2015, \textit{ApJS}, 219, 5
+
+\bibitem[Rafiei Ravandi \etal\ (2016)]{rr16}
+{{Rafiei Ravandi}, M., {Barmby}, P., {Ashby}, M.~L.~N., 
+	{Laine}, S., {Davidge}, T.~J., {Zhang}, J., {Bianchi}, L., 
+	{Babul}, A. \& {Chapman}, S.~C.}  2016, \textit{MNRAS}, 453, XXX
+
+
+\end{thebibliography}
+
+
+\end{document}

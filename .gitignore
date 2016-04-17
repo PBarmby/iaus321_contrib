@@ -1,0 +1,8 @@
+*.aux
+*.log
+Copyright.pdf
+Keywords.tex
+symposium*
+IAUcombinst.pdf
+stylemanual1989.pdf
+*.synctex.gz
